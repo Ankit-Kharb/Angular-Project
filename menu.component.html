@@ -1,0 +1,15 @@
+<div class="container">
+  <ul class="list-group">
+    <app-person
+    class="list-group-item"
+    *ngFor="let i of person " [i]="i">
+    
+    </app-person>
+  </ul>
+  <input type="text" style="margin-top: 15px; border: 2px,solid,#777; " placeholder="Enter name" [(ngModel)]="name1">
+  <input type="number" style="margin-left: 15px; border: 2px,solid,#777; margin-top: 15px;" placeholder="Enter age" [(ngModel)]="age1">
+  <button class="btn btn-primary" style="width: 70px; margin-left: 15px;" (click)="Add(name1,age1)">
+    ADD
+  </button>
+  
+</div>
